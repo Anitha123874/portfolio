@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.about-box{
+    border: 1px solid black;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     font-family:"Abel", sans-serif;
+}
+.head{
+    font-size: var(--font);
+    border-bottom: 4px dashed white;
+    color: white;
+}
+.section{
+    background-color: white;
+    height: 750px;
+    border: 1px solid black;
+     font-family: "Abel", sans-serif;
+     background-color: black;
+     color: white;
+}
+.aside{
+    height: 600px;
+    width: 500px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* outer */
+.card{
+    height:200px;
+    width: 200px;
+    background-color: salmon;
+    position: relative;
+    top: 0%;
+    right: -0%;
+    animation-name: cube;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
+}
+ .side{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.front {
+    transform: translateZ(100px);
+    background-color:black;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap: 10px;
+    border: none;
+}
+.card .box{
+    border: 1px solid white;
+}
+/* Back */
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: black;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap: 10px;
+}
+/* Right */
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color:black;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap: 10px;
+}
+/* Left */
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color:black;
+     display:grid;
+    grid-template-columns:auto auto auto;
+    gap: 10px;
+}
+/* Top */
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+    background-color:black;
+     display:grid;
+    grid-template-columns:auto auto auto;
+    gap: 10px;
+}
+/* Bottom */
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-color:black;
+     display:grid;
+    grid-template-columns:auto auto auto;
+    gap: 10px;
+}
+@keyframes cube {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+} 
+.box{
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+}
+.right-box {
+    height: 500px;
+    width: 700px;
+    border: 1px solid black;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    border: none;
+}
+.right-box h1{
+    font-size: 49px;
+}
+.right-box p{
+    font-size: 26px;
+    line-height: 38px;
+    padding-left: 50px;
+}
+.icon1{
+    margin-top: 60px;
+    font-size: 56px;
+}
+.icon{
+    font-size: 56px;
+   padding-left: 600px;
+}
+.right-box h1 span {
+    display: inline-block;
+    opacity: 0;
+   -webkit-text-stroke:1px white;
+    color:transparent;
+}
+.right-box h1 span:nth-child(1) {
+    animation-name: let1;
+     animation-fill-mode: forwards;
+     /* animation-iteration-count: infinite; */
+      animation-duration:1s;
+    animation-delay: 0s;
+}
+ .right-box h1 span:nth-child(2) {
+    animation-name: let2;
+     animation-fill-mode: forwards;
+     /* animation-iteration-count: infinite; */
+     animation-duration:1s ;
+    animation-delay: 1s;
+}
+  .right-box h1 span:nth-child(3) {
+     animation-name: let3;
+     animation-fill-mode: forwards;
+     /* animation-iteration-count: infinite; */
+     animation-duration: 1s;
+    animation-delay: 1.5s;
+}  
+ .right-box h1 span:nth-child(4) {
+     animation-name: let4;
+     animation-fill-mode: forwards;
+     /* animation-iteration-count: infinite; */
+     animation-duration: 1s;
+    animation-delay: 2s;
+}
+.right-box h1 span:nth-child(5) {
+     animation-name: let5;
+     animation-fill-mode: forwards;
+     /* animation-iteration-count: infinite; */
+     animation-duration: 1s;
+    animation-delay: 2.5s;
+}
+.right-box h1 span:nth-child(6) {
+     animation-name: let6;
+     animation-fill-mode: forwards;
+     /* animation-iteration-count: infinite; */
+     animation-duration: 1s;
+    animation-delay: 3s;
+}   
+
+@keyframes let1 {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes let2 {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes let3 {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes let4 {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes let5 {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes let6 {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.poly{
+    height: 75px;
+    width: 75px;
+    border: 1px solid black;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: rgb(112, 109, 109);
+    clip-path: path("M 37,0 L 75,28 L 75,50 L 37,75 L 0,50 L 0,28 z");
+}
+.poly1{
+    height: 75px;
+    width: 75px;
+    border: 1px solid white;
+    background-color: rgb(84, 80, 80);
+        position: absolute;
+        top: -13%;
+        right: 0%;
+         clip-path: path("M 37,0 L 75,37 L 37,75 L 0,37 Z");
+}
+.poly2{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    margin: 25px 0px 0px 22px;
+    background-color: rgb(85, 80, 80);
+    transform: rotateZ(40deg);
+}
+.star {
+height: 80px;
+width: 80px;
+background-image: url(./star.png);
+position: absolute;
+top: 80%;
+background-size: cover;
+right: 0%;
+}
+@media only screen and (min-width:600px) and (max-width:900px){
+.aside{
+    width: 100%;
+    top: 50%;
+}
+.right-box
+{
+    top: 150%;
+    right: 5%;
+}
+.about-box{
+    top: 40%;
+}
+.section{
+    min-height: 250vh;
+}
+}
+@media only screen and (min-width:300px) and (max-width:600px){
+.aside{
+    width: 100%;
+    top: 45%;
+}
+.right-box
+{
+    width: 100%;
+    top: 150%;
+    right: 0%;
+    height: 600px;
+}
+.icon1{
+    position: static;
+      right: 0%;
+    top: 0%;
+}
+.icon{
+    padding-top: 300px;
+}
+.about-box{
+    top: 30%;
+}
+.section{
+    min-height: 250vh;
+}
+.right-box p{
+    margin: 0;
+}
+}
